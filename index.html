@@ -1,0 +1,736 @@
+<!doctype html><!-- Welcome my fellow web developer! //-->
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">     <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"        lang="en">     <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"               lang="en">     <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"                      lang="en"> <!--<![endif]-->
+
+<head>
+
+<title>Villa Pirorum</title>
+
+<!-- DOM Head Metadata //-->
+
+<meta charset="utf-8" />
+
+<meta http-equiv="x-ua-compatible"            content="ie=edge,chrome=1"                                                      />
+<meta http-equiv="Content-type"               content="text/html;charset=utf-8"                                               />
+<meta http-equiv="content-language"           content="en"                                                                    />
+
+<meta title="Villa Pirorum" />
+
+<meta name="keywords"                         content="Villa Pirorum"                                                          />
+
+<meta name="format-detection"                 content="telephone=no"                                                          />
+<meta name="viewport"                         content="width=device-width, minimum-scale=1, initial-scale=1"                  />
+<meta name="description"                      content="Villa Pirorum"                                                          />
+<meta name="author"                           content="Antoine Villepreux"                                                    />
+<meta name="copyright"                        content="Antoine Villepreux 2000-2020"                                          />
+<meta name="title"                            content="Villa Pirorum"                                                          />
+<meta name="theme-color"                      content="#000"                                                                  />
+
+<meta name="DC.title"                         content="Villa Pirorum"                                                          />
+<meta name="DC.format"                        content="text/html"                                                             />
+<meta name="DC.language"                      content="en"                                                                    />
+
+<meta name="geo.region"                       content="FR-75"                                                                 />
+<meta name="geo.placename"                    content="Paris"                                                                 />
+<meta name="geo.position"                     content="48.862808;2.348237"                                                    />
+<meta name="ICBM"                             content="48.862808, 2.348237"                                                   />
+
+<meta name="twitter:card"                     content="summary"                                                               />
+<meta name="twitter:site"                     content="me"                                                                    />
+<meta name="twitter:url"                      content="http://villeprefs.cluster027.hosting.ovh.net/dom/examples/helloworld/" />
+<meta name="twitter:title"                    content="Villa Pirorum"                                                          />
+<meta name="twitter:description"              content="Villa Pirorum"                                                          />
+<meta class="twitter:image" />
+
+<meta property="og:site_name"                 content="Villa Pirorum"                                                          />
+<meta property="og:image"                     content=""                                                                      />
+<meta property="og:title"                     content="Villa Pirorum"                                                          />
+<meta property="og:description"               content=""                                                                      />
+<meta property="og:url"                       content="http://villeprefs.cluster027.hosting.ovh.net/dom/examples/helloworld/" />
+<meta property="og:type"                      content="website"                                                               />
+
+<meta name="application-name"                 content="Villa Pirorum"                                                          />
+
+<meta name="msapplication-TileColor"          content="#000"                                                                  />
+<meta class="msapplication-TileImage" />
+
+<meta name="msapplication-notification"       content="frequency=30;polling-uri=/?rss=tile&id=1;polling-uri2=/?rss=tile&id=2;polling-uri3=/?rss=tile&id=3;polling-uri4=/?rss=tile&id=4;polling-uri5=/?rss=tile&id=5; cycle=1" />
+
+<link rel="stylesheet" href="#" type="text/css" media="screen"/>
+
+<link rel="alternate" href="/?rss" type="application/rss+xml" title="RSS"/>
+<link rel="alternate" href="/?lang=en" hreflang="en-EN"/>
+<link rel="alternate" href="/?lang=fr" hreflang="fr-fr"/>
+<link rel="amphtml" href="/?amp=1"/>
+<link rel="canonical" href="http://villeprefs.cluster027.hosting.ovh.net/dom/examples/helloworld/"/>
+
+<link rel="manifest"   href="manifest.json"/>
+
+<!-- DOM Head styles //-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.0/sanitize.min.css" type="text/css" media="screen"/>
+
+<style>
+
+    /* DOM CSS boilerplate */
+
+    :root
+    {
+    	
+        --theme-color:                  #000; 
+        --text-color:                   #000; 
+        --link-color:                   #00F; 
+        --background-color:             #FFF; 
+        --header-height:                256px; 
+        --header-min-height:            0px; 
+        --header-toolbar-height:        48px; 
+        --main-max-width:               1024px; 
+        --dom-gap:                      10px; 
+        --default-image-width:          300; 
+        --default-image-height:         200; 
+        --default-image-ratio:          calc(var(--default-image-width) / var(--default-image-height)); 
+        --scrollbar-width:              17px; 
+        
+        --color-500px:                  #222222;
+        --color-flickr:                 #FF0084;--color-flickr-2: #0063DC;
+        --color-facebook:               #3B5998;
+        --color-twitter:                #00ACED;
+        --color-linkedin:               #0077B5;
+        --color-instagram:              #517FA4;
+        --color-pinterest:              #CB2027;
+        --color-tumblr:                 #32506D;
+        --color-rss:                    #FF6F00;
+        --color-printer:                #FFFFFF;
+        --color-notifications:          #FFFFFF;
+        --color-messenger:              #0083FF;
+        --color-alert:                  #EE0000;
+        --color-amp:                    #0379C4;
+        --color-loading:                #FFAA00;
+        --color-darkandlight:           #FFFFFF;
+        --color-leboncoin:              #EA6B30;
+        --color-seloger:                #E00034;
+        --color-numerama:               #E9573F;
+        --color-googlenews:             #EB4132;--color-googlenews-2: #FBBD01;--color-googlenews-3: #31A952;--color-googlenews-4: #4086F4;
+    }
+
+                                           :root { --main-width: 100vw; }
+    @media screen and (min-width: 1024px) { :root { --main-width: 1024px; } }
+    
+    /* Font stack */
+
+    body,h1,h2,h3,h4,h5,h6                          { font-family: Inter, Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+    /* Colors */
+    
+    body                                            { background-color: var(--background-color); }
+    a, a:hover, a:visited                           { color: var(--link-color); }
+   
+    /* Layout */
+    
+     html, body                                     { margin: 0px; padding: 0px }
+     body                                           { text-align: center; min-height: 100vh; }
+     main                                           { text-align: left; padding-top: unset; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; width: 100%; max-width: var(--main-max-width) }
+
+     /* Main content inflate (makes footer sticky) */
+
+     body                                           { display: flex; flex-direction: column; min-height: 100vh; } 
+     body>main                                      { flex: 1; }
+
+     /* Toolbar */
+
+    .toolbar                                        { width: 100%; z-index: 1; }
+     
+    .toolbar-row                                    { width: 100%; margin-left: 0px; margin-right: 0px; display: flex; }
+
+    .toolbar-row                                    {    background-color: var(--theme-color);      color: var(--background-color); }
+    .toolbar-row a                                  { /* background-color: var(--theme-color); */   color: var(--background-color); }
+    .toolbar-row-banner                             {    background-color: var(--theme-color); /*   color: default; */           }
+    
+    .toolbar-row                                    { height: var(--header-toolbar-height); align-items: center; }
+    .toolbar-row-banner                             { height: var(--header-height); max-height: var(--header-height); min-height: var(--header-min-height); }
+
+    .toolbar-row     .cell                          { overflow: hidden; }
+    .toolbar-row-nav                                { padding-right: margin-right: var(--dom-gap); }
+    .toolbar-row-nav .cell:nth-child(1)             { width: calc(100vw / 2 - var(--scrollbar-width) / 2 - var(--main-max-width) / 2); min-width: var(--header-toolbar-height); }
+    .toolbar-row-nav .cell:nth-child(2)             { flex: 0 1 auto; text-align: left; }
+    .toolbar-row-nav .cell:nth-child(3)             { flex: 1 0 auto; text-align: right; }
+
+    .toolbar-row-nav .cell:nth-child(3) a           { padding-left: var(--dom-gap); }
+    .toolbar-row-nav .cell:nth-child(3) ul          { display: inline-block; list-style-type: none; padding-inline-start: 0px; padding-inline-end: 0px; margin-block-end: 0px; margin-block-start: 0px; }
+    .toolbar-row-nav .cell:nth-child(3) li          { display: inline-block; }
+    .toolbar-row-nav .cell:nth-child(3) li a        { display: inline-block; width: 100%; padding: var(--dom-gap); }
+
+    .toolbar .nav-link                              { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-size: 1.5em; } 
+    .toolbar .row.static                            { visibility: hidden; position: fixed; top: 0px; z-index: 999999; } 
+
+    .menu-toggle                                    { width: var(--header-toolbar-height); }
+    .menu-toggle a,       .toolbar-title a,
+    .menu-toggle a:hover, .toolbar-title a:hover    { text-decoration: none; }
+    .toolbar-title .headline1                       { margin-top: 0px; margin-bottom: 0px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .menu                                           { display: none } /* BY DEFAULT, DYNAMIC MENU IS NOT SUPPORTED */
+
+    body>.footer                                    { background-color: var(--theme-color); color: var(--background-color); }
+
+    /* Images */
+
+    picture, figure, img, amp-img                   { max-width: 100%; object-fit: cover; vertical-align: top; display: inline-block }
+    figure                                          { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;  }
+    img, amp-img                                    { max-width: 100%; object-fit: cover; }
+
+    /* Grid */
+
+    .grid                                           { display: grid; grid-gap: var(--dom-gap); }
+
+    /* Back-to-top style */    
+    
+    .cd-top, .cd-top:visited                        { background-color: var(--theme-color); color: var(--background-color); }
+    .cd-top                                         { text-decoration: none; display: inline-block; height: 40px; width: 40px; position: fixed; bottom: 40px; right: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); text-align: center; line-height: 40px; visibility: hidden; opacity: 0 }
+    .cd-top                                         { transition: opacity .3s 0s, visibility 0s .3s; }
+    .cd-top.cd-is-visible, .cd-top.cd-fade-out,    
+    .no-touch .cd-top:hover                         { transition: opacity .3s 0s, visibility 0s 0s; }
+    .cd-top.cd-is-visible                           { visibility: visible; opacity: 1; }
+    .cd-top.cd-fade-out                             { opacity: .5; }
+    .cd-top:hover                                   { opacity: 1; text-decoration: none }
+    
+    @media only screen and (min-width:  768px)      { .cd-top { right: 20px; bottom: 20px; } }
+    @media only screen and (min-width: 1024px)      { .cd-top { right: 30px; bottom: 30px; line-height: 60px; height: 60px; width: 60px; font-size: 30px } }
+    
+    /* Animations */
+
+    a, a svg path                                   { transition: .6s ease-in-out }
+
+    /* Other utilities */    
+    
+    .app-install                                    { display: none }
+    .anchor                                         { visibility: hidden; display: block; height: 1px; position: relative; top: calc(-1 * var(--header-toolbar-height) - var(--header-min-height)) }
+    .clearfix { height: 1% } .clearfix:after        { content:"."; height:0; line-height:0; display:block; visibility:hidden; clear:both; }
+    
+        
+    /* Menu open/close button layout */
+
+    .menu-switch-symbol, .menu-close-symbol         { height: var(--header-toolbar-height); line-height: var(--header-toolbar-height); }
+
+    /* Menu open/close mechanism */
+
+    .menu-close-symbol                              { display: none; }
+
+    /* Menu list */
+
+    .menu                                           { background-color: var(--theme-color); color: var(--background-color); box-shadow: 1px 1px 4px 0 rgba(0,0,0,.2); }
+    .menu a:hover                                   { background-color: var(--background-color); color: var(--theme-color); }
+
+    #menu-open .menu                                { position: absolute; }
+    .menu                                           { max-height: 0; transition: max-height 1s ease-out; text-align: left; }
+    .menu ul                                        { list-style-type: none; padding-inline-start: 0px; padding-inline-end: 0px; margin-block-end: 0px; margin-block-start: 0px; }
+    .menu li a                                      { display: inline-block; width: 100%; padding: var(--dom-gap); }
+
+    /* Main images */
+        
+    main figure                                     { display: inline-block; }
+    main figure > picture, main figure > amp-img    { display: inline-block; width: 100%; height: 0px; padding-bottom: calc(100% / var(--default-image-ratio)); overflow: hidden; position: relative; }
+    
+    main figure img                                 { /* position: absolute; */ left: 0px; top: 0px; width: 100%; height: 100%;}
+    
+    main amp-img, main img, main picture            { object-fit: cover; }    
+    amp-img.loading, img.loading, picture.loading   { object-fit: none;  }
+
+    /* Scrollbar */
+    
+    body                                            { scrollbar-width: var(--scrollbar-width); }
+    body::-webkit-scrollbar                         {           width: var(--scrollbar-width); }
+    
+    body                                            {  scrollbar-color: var(--theme-color)                                                      var(--background-color); }
+    body::-webkit-scrollbar-thumb                   { background-color: var(--theme-color); } body::-webkit-scrollbar-track { background-color: var(--background-color); }
+
+    /* Aspect Ratio wrappers */
+
+    .aspect-ratio::before                            { content: ""; display: block; padding-bottom: calc(100% / (16 / 9)); }
+    .aspect-ratio                                    { position: relative; }
+    .aspect-ratio > :first-child                     { position: absolute; top: 0; left: 0; width:  100%; height: 100%; }
+    .aspect-ratio > img                              { height: auto; }
+
+    .aspect-ratio-16-9::before                       { padding-bottom: calc(100% / (16 / 9));   }
+    .aspect-ratio-16-10::before                      { padding-bottom: calc(100% / (16 / 10));  }
+    .aspect-ratio-5-4::before                        { padding-bottom: calc(100% / (5 / 4));    }
+    .aspect-ratio-4-3::before                        { padding-bottom: calc(100% / (4 / 3));    }
+    .aspect-ratio-3-2::before                        { padding-bottom: calc(100% / (3 / 2));    }
+    .aspect-ratio-2-1::before                        { padding-bottom: calc(100% / (2 / 1));    }
+    .aspect-ratio-1-1::before                        { padding-bottom: calc(100% / (1 / 1));    } 
+
+    /* SVG */
+
+    .span-svg-wrapper                               { display: inline-block; height: auto; }
+    .span-svg-wrapper-aligned                       { position: relative; bottom: -6px; padding-right: 6px; }
+
+    
+    svg path.svg-500px                              { fill: var(--color-500px); } 
+    svg path.svg-flickr                             { fill: var(--color-flickr); } svg path.svg-flickr-2 { fill: var(--color-flickr-2); } 
+    svg path.svg-facebook                           { fill: var(--color-facebook); } 
+    svg path.svg-twitter                            { fill: var(--color-twitter); } 
+    svg path.svg-linkedin                           { fill: var(--color-linkedin); } 
+    svg path.svg-instagram                          { fill: var(--color-instagram); } 
+    svg path.svg-pinterest                          { fill: var(--color-pinterest); } 
+    svg path.svg-tumblr                             { fill: var(--color-tumblr); } 
+    svg path.svg-rss                                { fill: var(--color-rss); } 
+    svg path.svg-printer                            { fill: var(--color-printer); } 
+    svg path.svg-notifications                      { fill: var(--color-notifications); } 
+    svg path.svg-messenger                          { fill: var(--color-messenger); } 
+    svg path.svg-alert                              { fill: var(--color-alert); } 
+    svg path.svg-amp                                { fill: var(--color-amp); } 
+    svg path.svg-loading                            { fill: var(--color-loading); } 
+    svg path.svg-darkandlight                       { fill: var(--color-darkandlight); } 
+    svg path.svg-leboncoin                          { fill: var(--color-leboncoin); } 
+    svg path.svg-seloger                            { fill: var(--color-seloger); } 
+    svg path.svg-numerama                           { fill: var(--color-numerama); } 
+    svg path.svg-googlenews                         { fill: var(--color-googlenews); } svg path.svg-googlenews-2 { fill: var(--color-googlenews-2); } svg path.svg-googlenews-3 { fill: var(--color-googlenews-3); } svg path.svg-googlenews-4 { fill: var(--color-googlenews-4); } 
+
+    /* Toolbar */
+
+    
+
+    .toolbar                                        { position: fixed; top: 0px; } 
+
+    
+    
+    /* Menu open/close mechanism */
+
+    #menu-open        .menu-switch-symbol           { display: inline-block;  }
+    #menu-open:target .menu-switch-symbol           { display: none; }
+    
+    #menu-open        .menu-close-symbol            { display: none;  }
+    #menu-open:target .menu-close-symbol            { display: inline-block; }
+    
+    #menu-open        .menu                         { display: none;  max-height:   0vh; }
+    #menu-open:target .menu                         { display: block; max-height: 100vh; }
+    
+
+    /* PRINT */
+        
+    @media print {
+
+        .toolbar .row:nth-child(1) { display: none }
+        .toolbar .row:nth-child(2) { background-color: transparent; align-items: flex-start; justify-content: flex-end; }
+        .toolbar .row:nth-child(2) .toolbar-cell-left   { display: none }
+        .toolbar .row:nth-child(2) .toolbar-cell-right  { display: none }
+        .toolbar .row:nth-child(2) .toolbar-cell-center { background-color: transparent;  padding-right: var(--scrollbar-width); }
+        
+        .main { margin-top:  0px }
+        
+        body>.footer, iframe { display: none; height: 0px; }
+    }    
+        
+</style>
+
+<!-- DOM Head scripts //-->
+
+<script type="text/javascript">
+
+    /* DOM Head Javascript boilerplate */
+
+    var dom_ajax_pending_calls = [];
+
+    function dom_ajax(url, onsuccess, period, onstart, mindelay)
+    {
+        dom_ajax_pending_calls.push(new Array(url, onsuccess, period, onstart, mindelay));
+    };
+
+</script>
+
+<script type="text/javascript">
+var scan_and_print = function() { alert("Images are not loaded yet"); };
+</script>
+
+</head>
+
+<body class="body">
+
+<!--[if lte IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
+
+<script type="application/ld+json">
+{
+    "@context": "https:\/\/schema.org",
+    "@type": "Person",
+    "name": false,
+    "url": "http:\/\/villeprefs.cluster027.hosting.ovh.net\/dom\/examples\/helloworld\/",
+    "sameAs": [
+        "https:\/\/www.facebook.com\/me",
+        "https:\/\/www.instagram.com\/self\/",
+        "https:\/\/blog.tumblr.com",
+        "https:\/\/www.pinterest.com\/blog\/blog\/"
+    ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https:\/\/schema.org",
+    "@type": "Organization",
+    "url": "http:\/\/villeprefs.cluster027.hosting.ovh.net\/dom\/examples\/helloworld\/",
+    "logo": "http:\/\/villeprefs.cluster027.hosting.ovh.net\/dom\/examples\/helloworld\/\/image.png"
+}
+</script>
+
+<h1 class="headline headline1">Villa Pirorum</h1>
+<p><a href="http://www.villepreux.net">Site web de la famille Villepreux</a></p>
+
+<!-- DOM Body boilerplate markup //-->
+
+<a href="#!" target="_self" class="cd-top a">▲</a>
+
+<!-- DOM Body scripts //-->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    /* DOM Body Javascript boilerplate */
+
+    var dom_process_ajax = function(url, onsuccess, period, onstart, mindelay)
+    {
+        if (typeof onsuccess    === "undefined") onsuccess  = null;
+        if (typeof period       === "undefined") period     = 0;
+        if (typeof onstart      === "undefined") onstart    = null;
+        if (typeof mindelay     === "undefined") mindelay   = 500;
+
+        var cb = true;
+
+        if (onstart)
+        {
+            onstart();
+            cb = null;
+            setTimeout(function() { if(cb) { cb(); } else { cb = true; } }, mindelay);
+        }
+
+        $.ajax
+        ({
+            url:      url
+        ,   type:    "GET"
+        ,   async:    true
+        ,   success:  function(res) { if (onsuccess) { if (cb) { onsuccess(res); } else { cb = function() { onsuccess(res); }; } } }
+        ,   complete: function()    { if (period > 0) { setTimeout(function() { dom_ajax(url, onsuccess, period, onstart, mindelay); }, period); } }
+        });
+    };
+
+    var dom_pop_ajax_call = function()
+    {
+        if (dom_ajax_pending_calls.length > 0)
+        {
+            var ajax_pending_call = dom_ajax_pending_calls.pop();
+
+            
+            dom_process_ajax(ajax_pending_call[0], ajax_pending_call[1], ajax_pending_call[2], ajax_pending_call[3], ajax_pending_call[4]);
+        }
+    };
+
+    while (dom_ajax_pending_calls.length > 0) { dom_pop_ajax_call(); };
+    setInterval(dom_pop_ajax_call, 1*1000);
+
+</script>
+
+<script type="text/javascript">
+
+    $(document).ready(function()
+    {
+        
+    
+        /* TOOLBAR */
+    
+        function onScrollToolbarHeight()
+        {
+            var header_max_height = $(".toolbar-row-banner").css("max-height").replace("px","");
+            var header_min_height = $(".toolbar-row-banner").css("min-height").replace("px","");
+            
+            var stuck_height = header_max_height - header_min_height;
+            
+            if ($(window).scrollTop() > stuck_height) { $(".toolbar").addClass(   "scrolled"); $(".toolbar").removeClass("top"); }
+            else                                      { $(".toolbar").removeClass("scrolled"); $(".toolbar").addClass(   "top"); }
+            
+            $(".toolbar-row-banner").css("height", header_max_height - $(window).scrollTop());
+        }
+    
+        $(".menu-switch-link").on("click", function(event)
+        {
+            
+        });
+    
+        onScrollToolbarHeight();
+    
+        
+    
+        /*  BACK TO TOP BUTTON */
+    
+        var $back_to_top                    = null;
+        var  back_to_top_offset             =  300;
+        var  back_to_top_offset_opacity     = 1200;
+        var  back_to_top_scroll_duration    =  700;
+    
+        function onScrollBackToTopButton()
+        {
+            ($(window).scrollTop() > back_to_top_offset) ? $back_to_top.addClass("cd-is-visible") : $back_to_top.removeClass("cd-is-visible cd-fade-out");
+    
+            if ($(window).scrollTop() > back_to_top_offset_opacity)
+            { 
+                $back_to_top.addClass("cd-fade-out");
+            }
+        }
+    
+        $back_to_top = $(".cd-top");
+        $back_to_top.on("click", function(event)
+        {
+            event.preventDefault();
+            $("body,html").animate({ scrollTop: 0 }, back_to_top_scroll_duration);
+        });
+    
+        
+    
+        /* IMAGES LOADING */
+    
+        $("img").on("error", function() { $(this).attr("src", ""); });
+        
+        var images_error_handler = function() { this.style.display = "none"; };
+    
+        function onScrollLazyImages() 
+        {
+            $("img").on("error", function() { $(this).addClass("failed"); $(this).attr("src", ""); });
+        
+            $("img.lazy[data-src]").each(function(i, img) 
+            {
+                var rect = img.getBoundingClientRect();
+        
+                if (rect.bottom >= 0 && rect.right >= 0 && rect.top <= (window.innerHeight || document.documentElement.clientHeight)) 
+                {
+                    $(img).parent().find("source.lazy[data-srcset]").each(function(i, src) 
+                    {
+                        $(src).attr("srcset", $(src).attr("data-srcset"));
+                        $(src).removeAttr("data-srcset");
+                    });
+                    
+                    $(img).attr("src", $(img).attr("data-src"));
+                    $(img).removeAttr("data-src");
+                    $(img).on("load", function() { $(img).removeClass("lazy"); $(img).removeClass("loading"); $(img).addClass("loaded"); });
+                }
+                else
+                {
+                }
+            });
+        
+            $("iframe.lazy[data-src]").each(function(i, e) 
+            {
+                var rect = e.getBoundingClientRect();
+        
+                if (rect.bottom >= 0 && rect.right >= 0 && rect.top <= (window.innerHeight || document.documentElement.clientHeight)) 
+                {
+                    $(e).attr("src", $(e).attr("data-src"));
+                    $(e).removeAttr("data-src");
+                    $(e).on("load", function() { $(e).removeClass("lazy"); $(e).removeClass("loading"); $(e).addClass("loaded"); });
+                }
+                else
+                {
+                }
+            });
+        }
+    
+        
+    
+        function onLoadLazyImages() 
+        {
+            setTimeout(function() { setInterval(onScrollLazyImages, 500); },  50);
+            onScrollLazyImages();
+        }
+    
+        
+    
+        /* SLICK SLIDERS */
+    
+        function updateSlickSlider()
+        {}
+        
+        function onLoadSliders()
+        {}
+    
+    
+        /* DOM main mechanisms */
+    
+        $(window).scroll(function()
+        {
+            onScrollBackToTopButton    ();
+            onScrollLazyImages         ();
+            onScrollToolbarHeight      ();
+        });
+    
+        $(window).on("load", function()
+        { 
+            onLoadLazyImages       ();
+            onLoadSliders          ();
+        });
+    });
+
+</script>
+
+<script type="text/javascript">
+
+    $(document).ready(function()
+    {
+        
+    
+        /* TOOLBAR BANNER IMAGE ROTATION */
+    
+        function onLoadRotatingHeaders()
+        { 
+        }
+    
+        
+    
+        /* SERVICE WORKER */
+    
+        function urlBase64ToUint8Array(base64String) { const padding = "=".repeat((4 - base64String.length % 4) % 4); const base64 = (base64String + padding).replace(/\-/g, "+").replace(/_/g, "/"); const rawData = window.atob(base64); return Uint8Array.from([...rawData].map((char) => char.charCodeAt(0))); }
+    
+        function onLoadServiceWorker()
+        {
+            if ("serviceWorker" in navigator) 
+            {
+                console.log("Service Worker is supported. Registering...");
+    
+                navigator.serviceWorker.register("sw.js").then(function(registration) 
+                {
+                    console.log("ServiceWorker registration successful with scope: ", registration.scope);
+                    
+                    var registration_installing = registration.installing;
+                    var registration_waiting    = registration.waiting;
+    
+                    if (registration_installing && registration_installing != null)
+                    {
+                            console.log("Installing...");
+    
+                            if (registration_installing.state === "activated" && !registration_waiting)
+                            {
+                                    console.log("Send Clients claim");
+                            
+                                    registration_installing.postMessage({type: "CLIENTS_CLAIM" });
+                            }
+                        
+                            registration_installing.addEventListener("statechange", function()
+                            {
+                                    if (registration_installing.state === "activated" && !registration_waiting) 
+                                    {
+                                            console.log("Send Clients claim");
+                                            
+                                            registration_installing.postMessage({ type: "CLIENTS_CLAIM" });
+                                    }
+                            });
+                    }
+                    
+                    navigator.serviceWorker.ready.then(function(registration) 
+                    {
+                        registration.pushManager.getSubscription().then(function(subscription) 
+                        {
+                            if (!(subscription === null)) 
+                            {
+                                console.log("User IS subscribed.");
+                            }
+                            else 
+                            {
+                                console.log("User is NOT subscribed.");
+                            }
+                        })
+                        ;
+                        
+                        return registration.sync.register("myFirstSync");
+                    });
+                }, 
+                function(err) 
+                {
+                    console.log("ServiceWorker registration failed: ", err);
+                    
+                }).catch(function(err)
+                {
+                    console.log("Service Worker registration failed: ", err);
+                    
+                });
+                
+                if ("PushManager" in window) 
+                { 
+                }
+            }
+            else
+            {
+                console.log("Service worker not supported");
+            }
+        }
+    
+        
+        
+        /* PWA (PROGRESSIVE WEB APP) INSTALL */
+        
+        function onLoadPWA()
+        {
+            let deferredPrompt = null;
+            
+            console.log("Register Before Install Prompt callback");
+            
+            window.addEventListener("beforeinstallprompt", function(e) 
+            {
+                console.log("Before Install Prompt");
+                e.preventDefault();
+                deferredPrompt = e;
+                $(".app-install").css({"display": "inline-block"});
+            });
+            
+            $(".app-install").on("click", function(e)
+            {
+                $(".app-install").css({"display": "none"});
+                
+                if (deferredPrompt != null)
+                {
+                    deferredPrompt.prompt();
+                    
+                    deferredPrompt.userChoice.then(function(choiceResult)
+                    {
+                        if (choiceResult.outcome === "accepted") console.log("User accepted the A2HS prompt");
+                        else                                     console.log("User dismissed the A2HS prompt");
+                        
+                        deferredPrompt = null;
+                    });
+                }
+                else
+                {
+                    console.log("Install promt callback not received yet");
+                }
+            }); 
+        }; 
+        
+        
+        
+    
+        /* SCAN AND PRINT UTILITY */
+    
+        $(window).on("load", function()
+        { 
+            scan_and_print = function()
+            {
+                $("html").animate({ scrollTop: $(document).height() }, 1000, "swing", function() {
+                $("html").animate({ scrollTop: 0                    }, 1000, "swing", function() { window.print(); }); });
+            };
+        });
+    
+    
+        /* DOM main mechanisms */
+    
+        $(window).on("load", function()
+        { 
+            onLoadRotatingHeaders  ();
+            onLoadServiceWorker    ();
+            onLoadPWA              ();
+        });
+    });
+
+</script>
+
+<!-- Could not find any app.js default user script //-->
+
+</body><!-- DOM.PHP 0.4.2 //-->
+
+</html>
